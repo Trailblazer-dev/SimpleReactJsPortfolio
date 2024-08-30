@@ -10,7 +10,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   useEffect(() => {
-    if (!isOpen) {
+    if (isOpen) {
       document.body.style.overflow = "hidden"; //if navbar is open no scrolling
     } else {
       document.body.style.overflow = "auto";
